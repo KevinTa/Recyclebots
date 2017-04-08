@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Recyclebots quiz</title>
+<script src="quizquestions.js"></script>
+<link rel="stylesheet" type="text/css" href="quizstyle.css">
+</head>
+<body onload = "hideIbuttons();getDate()"> 
+<div id="div1">
+ <h1 id="p1">RecycleBots Quiz</h1>
+ <p id = "date"></p>
+ </div>
+ <p id= "score"></p>
+ <p id ="question"></p>
+<div id="div2">
+</div>
+<div id = "submit">
+<input type="button" id="start" onclick="showAnswers();CreateTimer()" value ="Start Quiz"></input>
+<input type="button" id="check" onclick="checkAnswer()" value="Answer"></input>
+<input type="button" id="exit" onclick="exitQuiz()" value="Exit Quiz" ></input>
+</div>
+<div id = "post">
+<p id ="message"></p>
+<p id ="timedis">Time Remaining: <span id = "time"></span></p>
+</div>
+<div id = "bar">
+
+</div>
+</body>
+</html>
+
